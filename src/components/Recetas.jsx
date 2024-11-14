@@ -1,6 +1,6 @@
 import { useRecetas } from '../hooks/useRecetas';
 import { useFavoritos } from '../context/FavoritosContext';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export default function Recetas() {
   const recetas = useRecetas();
@@ -27,7 +27,7 @@ export default function Recetas() {
       <ul>
         {recetas.map((receta) => (
           <li key={receta.id}>
-            <h3 onClick={() => handleRecetaClick(receta)}>{receta.nombre}</h3>
+            <Link onClick={() => handleRecetaClick(receta)}>{receta.nombre}</Link>
           </li>
         ))}
       </ul>
