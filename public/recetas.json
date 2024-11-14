@@ -1,0 +1,186 @@
+[
+  {
+    "id": 1,
+    "nombre": "Panqueques de Avena",
+    "categoriaId": "Desayunos",
+    "ingredientes": [
+      "1 taza de avena",
+      "1 banana",
+      "1 huevo",
+      "1/2 taza de leche"
+    ],
+    "preparacion": "Mezcla todos los ingredientes en una licuadora hasta obtener una masa homogénea. Cocina en una sartén con un poco de aceite hasta que estén dorados por ambos lados."
+  },
+  {
+    "id": 2,
+    "nombre": "Tostadas con Aguacate",
+    "categoriaId": "Desayunos",
+    "ingredientes": [
+      "2 rebanadas de pan integral",
+      "1 aguacate",
+      "Sal y pimienta al gusto"
+    ],
+    "preparacion": "Tuesta las rebanadas de pan. Tritura el aguacate y esparce sobre el pan. Sazona con sal y pimienta al gusto."
+  },
+  {
+    "id": 3,
+    "nombre": "Smoothie de Frutas",
+    "categoriaId": "Desayunos",
+    "ingredientes": [
+      "1 taza de frutas mixtas",
+      "1 taza de leche o jugo",
+      "1 cucharada de miel"
+    ],
+    "preparacion": "Coloca todos los ingredientes en una licuadora y mezcla hasta obtener un smoothie suave."
+  },
+  {
+    "id": 4,
+    "nombre": "Ensalada César de Pollo",
+    "categoriaId": "Almuerzos",
+    "ingredientes": [
+      "1 pechuga de pollo",
+      "Lechuga romana",
+      "Queso parmesano",
+      "Crutones",
+      "Aderezo César"
+    ],
+    "preparacion": "Cocina la pechuga de pollo a la plancha y córtala en tiras. En un tazón, mezcla la lechuga, queso parmesano y crutones. Agrega el pollo y adereza con la salsa César."
+  },
+  {
+    "id": 5,
+    "nombre": "Wrap de Vegetales",
+    "categoriaId": "Almuerzos",
+    "ingredientes": [
+      "1 tortilla de trigo",
+      "Hojas de espinaca",
+      "Pimientos en tiras",
+      "Hummus"
+    ],
+    "preparacion": "Unta hummus sobre la tortilla, añade las hojas de espinaca y las tiras de pimiento. Enrolla y corta a la mitad."
+  },
+  {
+    "id": 6,
+    "nombre": "Sopa de Verduras",
+    "categoriaId": "Almuerzos",
+    "ingredientes": [
+      "1 zanahoria",
+      "1 papa",
+      "1/2 calabacín",
+      "Caldo de verduras"
+    ],
+    "preparacion": "Corta las verduras en cubos y cocina en caldo hasta que estén tiernas. Sirve caliente."
+  },
+  {
+    "id": 7,
+    "nombre": "Pasta a la Boloñesa",
+    "categoriaId": "Cenas",
+    "ingredientes": [
+      "200g de pasta",
+      "Carne molida",
+      "Salsa de tomate",
+      "Cebolla",
+      "Ajo"
+    ],
+    "preparacion": "Cocina la pasta según las instrucciones. En una sartén, saltea la carne con cebolla y ajo, luego añade la salsa de tomate. Mezcla con la pasta."
+  },
+  {
+    "id": 8,
+    "nombre": "Lasaña de Verduras",
+    "categoriaId": "Cenas",
+    "ingredientes": [
+      "Láminas de lasaña",
+      "Espinacas",
+      "Calabacín",
+      "Salsa de tomate",
+      "Queso"
+    ],
+    "preparacion": "Coloca una capa de salsa, láminas de lasaña, espinacas y calabacín en una fuente. Repite y cubre con queso. Hornea hasta que esté dorado."
+  },
+  {
+    "id": 9,
+    "nombre": "Pizza Margarita",
+    "categoriaId": "Cenas",
+    "ingredientes": [
+      "Masa de pizza",
+      "Salsa de tomate",
+      "Queso mozzarella",
+      "Albahaca fresca"
+    ],
+    "preparacion": "Extiende la masa, cubre con salsa de tomate y queso. Hornea hasta que el queso se derrita y decora con albahaca fresca."
+  },
+  {
+    "id": 10,
+    "nombre": "Brownies de Chocolate",
+    "categoriaId": "Postres",
+    "ingredientes": [
+      "200g de chocolate",
+      "150g de mantequilla",
+      "3 huevos",
+      "150g de azúcar",
+      "80g de harina"
+    ],
+    "preparacion": "Derrite el chocolate y la mantequilla. Bate los huevos con el azúcar y añade el chocolate derretido. Incorpora la harina y mezcla. Hornea a 180°C por 25 minutos."
+  },
+  {
+    "id": 11,
+    "nombre": "Tarta de Manzana",
+    "categoriaId": "Postres",
+    "ingredientes": [
+      "3 manzanas",
+      "1 taza de harina",
+      "1 taza de azúcar",
+      "1/2 taza de mantequilla",
+      "Canela"
+    ],
+    "preparacion": "Corta las manzanas en rodajas. Mezcla la harina, azúcar y mantequilla hasta formar una masa. Coloca las manzanas sobre la masa y espolvorea con canela. Hornea a 180°C por 40 minutos."
+  },
+  {
+    "id": 12,
+    "nombre": "Mousse de Chocolate",
+    "categoriaId": "Postres",
+    "ingredientes": [
+      "200g de chocolate",
+      "3 huevos",
+      "200ml de crema para batir",
+      "50g de azúcar"
+    ],
+    "preparacion": "Derrite el chocolate y mezcla con las yemas. Bate las claras a punto de nieve con el azúcar y añade la mezcla de chocolate. Incorpora la crema batida y refrigera por 2 horas."
+  },
+  {
+    "id": 13,
+    "nombre": "Palomitas de Maíz",
+    "categoriaId": "Snacks",
+    "ingredientes": [
+      "1/2 taza de maíz para palomitas",
+      "2 cucharadas de aceite",
+      "Sal al gusto"
+    ],
+    "preparacion": "Calienta el aceite en una olla, añade el maíz y cubre. Cocina a fuego medio hasta que el maíz deje de explotar. Sazona con sal."
+  },
+  {
+    "id": 14,
+    "nombre": "Guacamole",
+    "categoriaId": "Snacks",
+    "ingredientes": [
+      "2 aguacates",
+      "1 tomate",
+      "1/2 cebolla",
+      "Cilantro",
+      "Sal y limón al gusto"
+    ],
+    "preparacion": "Machaca los aguacates y mezcla con el tomate y cebolla picados. Agrega cilantro y sazona con sal y limón."
+  },
+  {
+    "id": 15,
+    "nombre": "Hummus de Garbanzos",
+    "categoriaId": "Snacks",
+    "ingredientes": [
+      "1 taza de garbanzos cocidos",
+      "2 cucharadas de tahini",
+      "1 diente de ajo",
+      "Jugo de limón",
+      "Aceite de oliva y sal"
+    ],
+    "preparacion": "Licúa los garbanzos con tahini, ajo, jugo de limón, y sal hasta obtener una mezcla suave. Sirve con un chorrito de aceite de oliva."
+  }
+]
