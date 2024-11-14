@@ -1,20 +1,19 @@
-import React from 'react';
 import { useFavoritos } from '../context/FavoritosContext';
 
-function Favoritos () {
-  const {favoritos, eliminarDeFavoritos} = useFavoritos();
+export default function Favoritos() {
+  const { favoritos, removeFavorito } = useFavoritos();
+
   return (
     <div>
-      <h1>Favoritos</h1>
+      <h2>Mis Favoritos</h2>
       <ul>
         {favoritos.map((receta) => (
           <li key={receta.id}>
-            <h2>{receta.nombre}</h2>
-            <button onClick={() => eliminarDeFavoritos(receta.id)}>Eliminar</button>
+            <h3>{receta.nombre}</h3>
+            <button onClick={() => removeFavorito(receta)}>Eliminar de Favoritos</button>
           </li>
         ))}
       </ul>
     </div>
-  )
+  );
 }
-export default Favoritos

@@ -1,24 +1,23 @@
-import React from 'react';
-import { FavoritosProvider } from './context/FavoritosContext';
+import Navbar from './components/Navbar';
 import Recetas from './components/Recetas';
 import Favoritos from './components/Favoritos';
-import useRecetas from './hooks/useRecetas';
-import { Route, Router, Routes } from 'react-router-dom';
-import Navbar from './components/Navbar';
 import RecetaDetalle from './components/RecetaDetalle';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { FavoritosProvider } from './context/FavoritosContext';
 
-function App () {
-  const recetas = useRecetas
+function App() {
   return (
-    <FavoritosProvider>
-      <Router>
+    <Router>
+      <FavoritosProvider>
+        <Navbar />
         <Routes>
-          <Route path="/" element={<Recetas />} />
-          <Route path="/favoritos/:id" element={<RecetaDetalle />} />
+          <Route exact path="/" element={<Recetas />} />
+          <Route path="/favoritos" element={<Favoritos />} />
+          <Route path="/receta/:id" element={<RecetaDetalle />} />
         </Routes>
-      </Router>
-    </FavoritosProvider>
-  )
+      </FavoritosProvider>
+    </Router>
+  );
 }
 
 export default App;

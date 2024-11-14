@@ -1,33 +1,36 @@
-import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { useRecetas } from '../hooks/useRecetas';
+import { useFavoritos } from '../context/FavoritosContext';
+import { useNavigate } from 'react-router-dom';
 
-function Recetas () {
-  const { recetas, cargarRecetas, loading, error } = useResultados();
+export default function Recetas() {
+  const recetas = useRecetas();
+  const { favoritos, addFavorito, removeFavorito } = useFavoritos();
+  const navigate = useNavigate();
 
-  useEffect(() => {
-    cargarRecetas();
-  }, [cargarRecetas]);
+  const handleRecetaClick = (receta) => {
+    navigate(`/receta/${receta.id}`);
+  };
 
-  console.log('Encuestas en el estado:', recetas); // Ver los datos cargados
+  const isFavorito = (receta) => favoritos.some((r) => r.id === receta.id);
 
-  if (loading) {
-    return <p>Cargando encuestas...</p>;
-  }
+  const handleFavorito = (receta) => {
+    if (isFavorito(receta)) {
+      removeFavorito(receta);
+    } else {
+      addFavorito(receta);
+    }
+  };
 
-  if (error) {
-    return <p>Error: {error}</p>;
-  }
   return (
     <div>
-      {recetas.map((receta) => (
-        
+      <h2>Todas las Recetas</h2>
+      <ul>
+        {recetas.map((receta) => (
           <li key={receta.id}>
-          <Link to={`/receta/${receta.id}`}>{receta.nombre}</Link>
-        </li>
-        
-      ))}
+            <h3 onClick={() => handleRecetaClick(receta)}>{receta.nombre}</h3>
+          </li>
+        ))}
+      </ul>
     </div>
-  )
+  );
 }
-
-export default Recetas

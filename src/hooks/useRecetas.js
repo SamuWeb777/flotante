@@ -1,21 +1,16 @@
-import { useEffect, useState } from "react";
+import { useState, useEffect } from 'react';
 
-
-function useRecetas () {
-  const [recetas, cargarRecetas] = useState([]);
+export function useRecetas() {
+  const [recetas, setRecetas] = useState([]);
 
   useEffect(() => {
-    // Simulamos una carga de datos desde el archivo JSON
-    const cargarRecetas = async () => {
+    const fetchRecetas = async () => {
       const response = await fetch('/recetas.json');
       const data = await response.json();
       setRecetas(data);
     };
-
-    cargarRecetas();
+    fetchRecetas();
   }, []);
 
-  return {recetas};
+  return recetas;
 }
-
-export default useRecetas;
