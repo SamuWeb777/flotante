@@ -7,7 +7,7 @@ export default function RecetaDetalle() {
   const recetas = useRecetas();
   const { favoritos, addFavorito, removeFavorito } = useFavoritos();
  console.log(recetas)
-  const receta = recetas.find(rec => rec.id === id);
+  const receta = recetas.find(rec => rec.id == id);
   console.log(receta);
   console.log(id);
   const isFavorito = () => favoritos.some((r) => r.id === receta?.id);
@@ -19,10 +19,12 @@ export default function RecetaDetalle() {
       addFavorito(receta);
     }
   };
-
+  if (!receta) {
+    return <p>Receta no encontrada.</p>;
+  }
   return (
     <div>
-      <h2>{receta?.nombre}</h2>
+      <h2>{receta.nombre}</h2>
       <button onClick={handleFavorito}>
         {isFavorito() ? 'Eliminar de Favoritos' : 'Agregar a Favoritos'}
       </button>
