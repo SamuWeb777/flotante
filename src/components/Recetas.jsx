@@ -27,7 +27,7 @@ export default function Recetas() {
       <ul>
         {recetas.map((receta) => (
           <li key={receta.id}>
-            <Link onClick={() => handleRecetaClick(receta)}>{receta.nombre}</Link>
+            <Link to={`/receta/${receta.id}`}>{receta.nombre}</Link>
           </li>
         ))}
       </ul>
